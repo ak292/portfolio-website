@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+}
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.homepage-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.homepage-2 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
