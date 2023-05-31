@@ -1,27 +1,24 @@
 import ContactArea from "./ContactArea";
 
-const ContactLinks = () => {
+const ContactLinks = ({ setProjects }) => {
   const links = [
     {
       id: 1,
       linkName: "View my GitHub profile",
       linkSRC: "https://www.github.com/ak292",
-      linkDesc: "Click here to view my GitHub profile.",
     },
     {
       id: 2,
       linkName: "Connect with me on LinkedIn",
       linkSRC: "https://www.linkedin.com/in/ahmed-keshka-7aab73266/",
-      linkDesc: "Click here to connect with me on LinkedIn.",
     },
     {
       id: 3,
       linkName: "Check out some of my personal projects",
-      linkSRC: "/projects",
-      linkDesc: "Click here to view some of my personal projects.",
+      linkSRC: "#",
     },
   ];
-  return <ContactArea links={links} />;
+  return <ContactArea links={links} setProjects={setProjects} />;
 };
 
 export default ContactLinks;

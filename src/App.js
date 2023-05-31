@@ -1,14 +1,8 @@
-// import Home from "./components/Home";
-import AppRouter from "./components/router/AppRouter";
+import Home from "./components/Home";
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      {/* <Home /> */}
-      <AppRouter />
-    </>
-  );
+  return <Home />;
 }
 
 export default App;

@@ -1,8 +1,119 @@
 img {
   height: 200px;
-  width: 700px;
+  width: 400px;
+}
+
+h1 {
+  color: #2471a3;
+  font-weight: bold;
+}
+
+p {
+  color: #2471a3;
+  text-transform: uppercase;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 25px);
+}
+
+.details-button {
+  background-color: #2471a3;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.details-button:hover {
+  background-color: #0099ff;
+}
+
+.details-button:focus {
+  outline: none;
+}
+
+.details-button:active {
+  background-color: #0099ff;
+  transform: translateY(1px);
+}
+
+/* ... previous CSS code ... */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 999;
+  display: none;
+}
+
+.overlay.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px); /* Adjust the blur strength as needed */
+}
+
+.overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.overlay-hide-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  background-color: #2471a3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.overlay-hide-button:hover {
+  background-color: #2471a3;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: #007bff; /* Customize the link color as desired */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  color: #0056b3; /* Customize the link hover color as desired */
 }

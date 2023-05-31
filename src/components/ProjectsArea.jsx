@@ -1,6 +1,6 @@
 import Projects from "./Projects";
 
-const ProjectsArea = () => {
+const ProjectsArea = ({ setProjects }) => {
   const items = [
     {
       id: 1,
@@ -28,7 +28,7 @@ const ProjectsArea = () => {
     },
   ];
 
-  return <Projects items={items} />;
+  return <Projects items={items} setProjects={setProjects} />;
 };
 
 export default ProjectsArea;
